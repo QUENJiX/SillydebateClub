@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Updated font */
+    background: linear-gradient(135deg, #f0f8ff, #e0f7fa); /* Background gradient */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Allow full width */
+}
+
+/* Header Styles */
+header {
+    background-color: #493267;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Full width */
+    max-width: 900px; /* Maximum width */
+    margin: 0 auto; /* Center the header */
+    text-align: center; /* Center text in header */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 20px;
+}
+
+/* Section Styles */
+#newDebate, #debateList {
+    margin: 20px 0; /* Space above and below */
+    width: calc(100% - 40px); /* Full width minus padding */
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-left: auto; /* Center the section */
+    margin-right: auto; /* Center the section */
+}
+
+/* Input Group Styles */
+.input-group {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 20px; /* Space below the input group */
+}
+
+.input-group textarea {
+    flex: 1; /* Allow textarea to take available space */
+    margin-right: 10px; /* Space between textarea and button */
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+    padding: 12px;
+    width: 85%; /* Increased width for input boxes */
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s, opacity 0.5s; /* Add opacity transition */
+    width: 150px; /* Fixed width for the button */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494); /* Darker gradient on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Debate Styles */
+.debate {
+    border: 1px solid #28a745;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out; /* Smooth appearance */
+}
+
+.debate:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Argument Styles */
+.argument {
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: #e9f7ff;
+    transition: background-color 0.3s, transform 0.3s;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+}
+
+.argument:hover {
+    background-color: #d0e9ff;
+    transform: translateY(-1px);
+}
+
+.argument-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 10px; /* Space above the buttons */
+    gap: 5px; /* Space between buttons */
+}
+
+.argument-buttons button {
+    margin-left: 0; /* Remove left margin */
+    width: 30px; /* Set a fixed width for the buttons */
+    height: 30px; /* Set a fixed height for the buttons */
+    display: flex; /* Use flex to center the icon */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+}
+
+/* Vote Count Styles */
+.vote-count {
+    display: inline-block; /* Make it an inline-block for padding */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 12px; /* Rounded corners */
+    background-color: #007bff; /* Background color */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    margin-left: 5px; /* Space between the buttons and the count */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.vote-count.positive {
+    background-color: #28a745; /* Green for positive votes */
+}
+
+.vote-count.negative {
+    background-color: #dc3545; /* Red for negative votes */
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    margin-top: 10px; /* Space above the button */
+    width: 100%; /* Ensure the button container takes full width */
+}
+
+/* Toggle Button Styles */
+.toggle-arguments {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    margin-bottom: 10px; /* Space below the button */
+}
+
+.toggle-arguments:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+    width: 100%; /* Full width */
+    max-width: 900px; /* Maximum width */
+    text-align: center; /* Center footer text */
+    margin-left: auto; /* Center the footer */
+    margin-right: auto; /* Center the footer */
+    padding: 10px 0; /* Add some padding for better spacing */
+}
+
+/* Select Styles */
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f8ff; /* Light background color */
+    color: #333; /* Text color */
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transitions */
+    width: auto; /* Adjust width to fit content */
+}
+
+select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    background-color: #e0f7fa; /* Slightly darker background on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    input, textarea {
+        width: 70%; /* Adjust input and textarea width for smaller screens */
+    }
+
+    button {
+        padding: 10px 20px; /* Adjust button padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust header size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust subheader size for smaller screens */
+    }
+}
+
