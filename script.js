@@ -21,7 +21,7 @@ function renderDebates() {
                 <button onclick="submitArgument(${index})">Submit</button>
             </div>
             <div class="sort-group">
-                <label for="sortArguments${index}">Sort Arguments:</label>
+                <label for="sortArguments${index}"></label>
                 <select id="sortArguments${index}" class="sort-select" aria-label="Sort arguments for ${debate.topic}" onchange="sortArguments(${index})">
                     <option value="highest">Highest Likes</option>
                     <option value="lowest">Lowest Likes</option>
